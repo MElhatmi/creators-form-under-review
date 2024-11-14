@@ -1,0 +1,112 @@
+/* Poppins Regular */
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Regular.eot"); /* IE9 Compatibility Mode */
+  src: url("assets/fonts/Poppins-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/fonts/Poppins-Regular.woff2") format("woff2"),
+    url("assets/fonts/Poppins-Regular.woff") format("woff"),
+    url("assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Poppins SemiBold */
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-SemiBold.eot"); /* IE9 Compatibility Mode */
+  src: url("assets/fonts/Poppins-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("assets/fonts/Poppins-SemiBold.woff") format("woff"),
+    url("assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  all: unset;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.application-status-container {
+  padding: 8rem 3rem 5.375rem 3rem;
+
+  text-align: center;
+  max-width: 28.625rem;
+}
+
+.application-status-container img {
+  margin-bottom: 2.5rem;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: #403e3e;
+  line-height: 1.25;
+  margin-bottom: 1.125rem;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #4d4d4d;
+  margin-bottom: 4.25rem;
+}
+
+.primary-color {
+  color: #00a4b6;
+  font-weight: 600;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  width: 100%;
+  background-color: #686868;
+  border: 1px solid #686868;
+  color: #ffffff;
+  padding-block: 14.5px;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+button:hover {
+  background-color: #ffffff; /* Darken slightly on hover */
+  color: #686868;
+}
+
+@media (max-width: 440px) {
+  .application-status-container {
+    padding-inline: 8vw;
+  }
+}
+
+@media (max-width: 402px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .application-status-container {
+    padding-inline: 5vw;
+  }
+}
